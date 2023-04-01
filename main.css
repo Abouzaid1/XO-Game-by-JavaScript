@@ -1,0 +1,132 @@
+body {
+    margin: auto;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.title {
+    width: 100%;
+    background-color: rgb(0, 51, 255);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.game {
+    text-align: center;
+    width: 50%;
+    margin-left: 2em;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.game .item {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+    font-size: 150px;
+    text-align: center;
+    font-weight: 800;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.item:hover {
+    background-color: rgba(176, 176, 176, 0.578);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.place{
+    width: 100%;
+}
+.qus{
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 150px;
+    left: 700px;
+    box-sizing: border-box;
+    padding: 100px;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+    
+}
+.label{
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+}
+.clr{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    backdrop-filter: brightness(30%);
+}
+.clr:hover{
+    cursor: not-allowed;
+}
+
+/* CSS */
+.button-51 {
+  background-color: transparent;
+  border: 1px solid #266DB6;
+  box-sizing: border-box;
+  color: #00132C;
+  font-family: "Avenir Next LT W01 Bold",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 16px 23px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 100px;
+}
+
+.button-51:hover,
+.button-51:active {
+  outline: 0;
+}
+
+.button-51:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-51:before {
+  background-color: #D5EDF6;
+  content: "";
+  height: calc(100% + 3px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+}
+
+.button-51:hover:before {
+  background-color: #6DCFF6;
+}
+
+@media (min-width: 768px) {
+  .button-51 {
+    padding: 16px 32px;
+  }
+}
